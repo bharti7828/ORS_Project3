@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 23, 2024, 1:36:37 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <subclass name="in.co.rays.project_3.dto.MarksheetDTO" extends="in.co.rays.project_3.dto.BaseDTO" discriminator-value="MarksheetDTO" lazy="false">
+        <property name="id" type="java.lang.Long">
+            <column name="ID" />
+        </property>
+        <property name="studentId" type="long">
+            <column name="STUDENTID" />
+        </property>
+        <property name="chemistry" type="java.lang.Integer">
+            <column name="CHEMISTRY" />
+        </property>
+        <property name="maths" type="java.lang.Integer">
+            <column name="MATHS" />
+        </property>
+        <property name="physics" type="java.lang.Integer">
+            <column name="PHYSICS" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="rollNo" type="java.lang.String">
+            <column name="ROLLNO" />
+        </property>
+    </subclass>
+</hibernate-mapping>
